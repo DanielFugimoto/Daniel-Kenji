@@ -1,0 +1,268 @@
+/* styles.css */
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    background-color: #4180ab;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header a {
+    margin: 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+header p {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin: 40px 200px 40px 200px;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.bio h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.bio h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.button {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #4e4e4e;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-content .email-link{
+    cursor: pointer;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #888;
+}
+
+.footer-bottom a {
+    color: #000;
+    text-decoration: none;
+}
+
+#principal {
+    padding: 40px 20px;
+}
+
+.resume, .contato {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+.section {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.item .date {
+    width: 20%;
+    font-size: 16px;
+    color: #777;
+}
+
+.item .details .redes {
+    width: 75%;
+}
+
+.item .details h3 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.item .details p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.redes p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.item .details a {
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.redes a {
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#back a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    justify-content: center;
+}
